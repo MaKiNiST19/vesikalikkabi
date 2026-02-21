@@ -85,33 +85,33 @@ export default function Hero() {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-60"></div>
 
                             {/* Floating Tags */}
-                            <div className="absolute top-6 left-6 md:top-10 md:left-10 bg-white/95 backdrop-blur shadow-xl rounded-xl p-3 flex items-center gap-3 border border-gray-100 hover:scale-105 transition-transform cursor-default z-20">
-                                <div className="bg-blue-100 p-2 rounded-full text-blue-700">
-                                    <img src="/vesikalik-kabi.svg" alt="Min Sipariş" className="w-5 h-5" />
+                            <div className="absolute top-4 left-4 md:top-10 md:left-10 bg-white/95 backdrop-blur shadow-xl rounded-xl p-2 md:p-3 flex items-center gap-2 md:gap-3 border border-gray-100 hover:scale-105 transition-transform cursor-default z-20">
+                                <div className="bg-blue-100 p-1.5 md:p-2 rounded-full text-blue-700">
+                                    <img src="/vesikalik-kabi.svg" alt="Min Sipariş" className="w-4 h-4 md:w-5 md:h-5" />
                                 </div>
-                                <div className="text-sm font-bold text-gray-900 leading-tight">
+                                <div className="text-[10px] md:text-sm font-bold text-gray-900 leading-tight">
                                     Min. 1000 Adet
-                                    <span className="block text-xs font-medium text-gray-500">Toptan Üretim</span>
+                                    <span className="block text-[8px] md:text-xs font-medium text-gray-500">Toptan Üretim</span>
                                 </div>
                             </div>
 
-                            <div className="absolute bottom-[20%] left-[25%] bg-white/95 backdrop-blur shadow-xl rounded-xl p-3 flex items-center gap-3 border border-gray-100 hover:scale-105 transition-transform cursor-default z-20">
-                                <div className="bg-purple-100 p-2 rounded-full text-purple-700">
-                                    <img src="/logo-baski.svg" alt="Logo Baskı" className="w-5 h-5" />
+                            <div className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/95 backdrop-blur shadow-xl rounded-xl p-2 md:p-3 flex items-center gap-2 md:gap-3 border border-gray-100 hover:scale-105 transition-transform cursor-default z-20">
+                                <div className="bg-purple-100 p-1.5 md:p-2 rounded-full text-purple-700">
+                                    <img src="/logo-baski.svg" alt="Logo Baskı" className="w-4 h-4 md:w-5 md:h-5" />
                                 </div>
-                                <div className="text-sm font-bold text-gray-900 leading-tight">
+                                <div className="text-[10px] md:text-sm font-bold text-gray-900 leading-tight">
                                     Özel Logo Baskı
-                                    <span className="block text-xs font-medium text-gray-500">Ücretsiz Tasarım</span>
+                                    <span className="block text-[8px] md:text-xs font-medium text-gray-500">Ücretsiz Tasarım</span>
                                 </div>
                             </div>
 
-                            <div className="absolute bottom-15 right-[10%] bg-white/95 backdrop-blur shadow-xl rounded-xl p-3 flex items-center gap-3 border border-gray-100 hover:scale-105 transition-transform cursor-default z-20">
-                                <div className="bg-orange-100 p-2 rounded-full text-orange-700">
-                                    <img src="/hizli-kargo.svg" alt="Hızlı Kargo" className="w-5 h-5" />
+                            <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur shadow-xl rounded-xl p-2 md:p-3 flex items-center gap-2 md:gap-3 border border-gray-100 hover:scale-105 transition-transform cursor-default z-20">
+                                <div className="bg-orange-100 p-1.5 md:p-2 rounded-full text-orange-700">
+                                    <img src="/hizli-kargo.svg" alt="Hızlı Kargo" className="w-4 h-4 md:w-5 md:h-5" />
                                 </div>
-                                <div className="text-sm font-bold text-gray-900 leading-tight">
+                                <div className="text-[10px] md:text-sm font-bold text-gray-900 leading-tight">
                                     Hızlı Sevkiyat
-                                    <span className="block text-xs font-medium text-gray-500">81 İle Kargo</span>
+                                    <span className="block text-[8px] md:text-xs font-medium text-gray-500">81 İle Kargo</span>
                                 </div>
                             </div>
                         </div>
