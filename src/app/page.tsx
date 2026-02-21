@@ -56,7 +56,7 @@ export default function Home() {
             <p className="text-gray-600 text-lg">Fotoğraf stüdyonuzun ihtiyacına uygun, firmanıza özel baskılı vesikalık kabı kategorilerimiz.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {CATEGORIES.map((category) => (
               <CategoryCard key={category.id} category={category} />
             ))}

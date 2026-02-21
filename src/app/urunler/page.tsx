@@ -31,10 +31,20 @@ export default function ProductsPage() {
                 </div>
 
                 {/* Çiftli Vesikalık Kabı Bölümü */}
-                <div className="mb-12">
+                <div className="mb-20">
                     <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-700">Çiftli Vesikalık Kabı Modelleri</h2>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 items-start max-w-7xl mx-auto">
                         {PRODUCTS.filter(p => p.categoryId === 'ciftli-vesikalik-kabi').slice(0, 4).map((product) => (
+                            <ProductCard key={product.id} product={product} />
+                        ))}
+                    </div>
+                </div>
+
+                {/* Fotoğraf Kabı Bölümü */}
+                <div className="mb-12">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-700">Fotoğraf Kabı Modelleri (Özel Ebat)</h2>
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 items-start max-w-7xl mx-auto">
+                        {PRODUCTS.filter(p => p.categoryId === 'fotograf-kabi').map((product) => (
                             <ProductCard key={product.id} product={product} />
                         ))}
                     </div>
