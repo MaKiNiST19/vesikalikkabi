@@ -20,6 +20,13 @@ export const CATEGORIES: Category[] = [
         slug: "ciftli-vesikalik-kabi",
         description: "Daha fazla fotoğraf sığdırmak için çiftli kaplar.",
         image: "/citfli-vesikalik-kabi.jpg"
+    },
+    {
+        id: "fotograf-kabi",
+        name: "Fotoğraf Kabı",
+        slug: "fotograf-kabi",
+        description: "Farklı ebatlarda profesyonel fotoğraf sunum ve koruma kapları.",
+        image: "/teklii-vesikalik-kabi.jpg"
     }
 ];
 
@@ -235,6 +242,150 @@ export const PRODUCTS: Product[] = [
             leadTime: "12-14 İş Günü"
         },
         image: "/ciftli-vesikalik-kabi-kapak.jpg",
+        pirReklamUrl: "https://pirreklam.com.tr"
+    },
+    {
+        id: "6x9-fotograf-kabi",
+        categoryId: "fotograf-kabi",
+        name: "6x9 Fotoğraf Kabı",
+        shortName: "6x9 Fotoğraf Kabı",
+        slug: "6x9-fotograf-kabi",
+        priceCheck: "Fiyat Sorunuz",
+        description: "Küçük format baskılar ve cüzdan boy vesikalıklar için 6x9 fotoğraf kılıfı.",
+        features: [
+            "6x9 cm standart ebat",
+            "Cüzdan boyutuna uygun",
+            "Dayanıklı bristol karton",
+            "Özel logo baskı imkanı"
+        ],
+        specs: {
+            material: "Amerikan Bristol",
+            dimensions: "6x9 cm",
+            minOrder: 1000,
+            printing: "Ofset / Serigrafi",
+            leadTime: "7 İş Günü"
+        },
+        image: "/tekli-vesikalik-kabi-kapak.jpg",
+        pirReklamUrl: "https://pirreklam.com.tr"
+    },
+    {
+        id: "10x15-fotograf-kabi",
+        categoryId: "fotograf-kabi",
+        name: "10x15 Fotoğraf Kabı",
+        shortName: "10x15 Fotoğraf Kabı",
+        slug: "10x15-fotograf-kabi",
+        priceCheck: "Fiyat Sorunuz",
+        description: "Fotoğrafçılık endüstrisinin en yaygın formatı olan 10x15 standart fotoğraf kabı.",
+        features: [
+            "10x15 cm standart ebat",
+            "Yaygın kullanım alanı",
+            "Yüksek baskı kalitesi",
+            "Farklı selefon seçenekleri"
+        ],
+        specs: {
+            material: "Kuşe / Bristol",
+            dimensions: "10x15 cm",
+            minOrder: 1000,
+            printing: "Ofset Baskı",
+            leadTime: "7-10 İş Günü"
+        },
+        image: "/tekli-vesikalik-kabi-kapak.jpg",
+        pirReklamUrl: "https://pirreklam.com.tr"
+    },
+    {
+        id: "13x18-fotograf-kabi",
+        categoryId: "fotograf-kabi",
+        name: "13x18 Fotoğraf Kabı",
+        shortName: "13x18 Fotoğraf Kabı",
+        slug: "13x18-fotograf-kabi",
+        priceCheck: "Fiyat Sorunuz",
+        description: "Okul çekimleri ve özel gün fotoğrafları için ideal 13x18 sunum kabı.",
+        features: [
+            "13x18 cm orta boy",
+            "Mezuniyet ve okul çekimleri",
+            "Mukavemetli yapı",
+            "Geniş reklam alanı"
+        ],
+        specs: {
+            material: "Kalın Bristol",
+            dimensions: "13x18 cm",
+            minOrder: 1000,
+            printing: "Ofset / Varak",
+            leadTime: "7-12 İş Günü"
+        },
+        image: "/tekli-vesikalik-kabi-kapak.jpg",
+        pirReklamUrl: "https://pirreklam.com.tr"
+    },
+    {
+        id: "15x21-fotograf-kabi",
+        categoryId: "fotograf-kabi",
+        name: "15x21 Fotoğraf Kabı",
+        shortName: "15x21 Fotoğraf Kabı",
+        slug: "15x21-fotograf-kabi",
+        priceCheck: "Fiyat Sorunuz",
+        description: "Mezuniyet, düğün ve konsept çekimler için prestijli 15x21 fotoğraf kabı.",
+        features: [
+            "15x21 cm (A5 formatı)",
+            "Düğün ve özel çekimler",
+            "Lüks kağıt seçenekleri",
+            "Kabartma (Gofre) uyumlu"
+        ],
+        specs: {
+            material: "Lüks Karton / Bristol",
+            dimensions: "15x21 cm",
+            minOrder: 1000,
+            printing: "Ofset / Gofre",
+            leadTime: "10-15 İş Günü"
+        },
+        image: "/tekli-vesikalik-kabi-kapak.jpg",
+        pirReklamUrl: "https://pirreklam.com.tr"
+    },
+    {
+        id: "18x24-fotograf-kabi",
+        categoryId: "fotograf-kabi",
+        name: "18x24 Fotoğraf Kabı",
+        shortName: "18x24 Fotoğraf Kabı",
+        slug: "18x24-fotograf-kabi",
+        priceCheck: "Fiyat Sorunuz",
+        description: "Büyük ebatlı stüdyo portreleri ve sanatsal çekimler için 18x24 kılıf çözümleri.",
+        features: [
+            "18x24 cm büyük boy",
+            "Sanatsal portre sunumu",
+            "Ekstra dayanıklı",
+            "Vip paketler için uygun"
+        ],
+        specs: {
+            material: "Yüksek Gramajlı Karton",
+            dimensions: "18x24 cm",
+            minOrder: 1000,
+            printing: "Ofset / Lak / Yaldız",
+            leadTime: "10-15 İş Günü"
+        },
+        image: "/tekli-vesikalik-kabi-kapak.jpg",
+        pirReklamUrl: "https://pirreklam.com.tr"
+    },
+    {
+        id: "20x25-fotograf-kabi",
+        categoryId: "fotograf-kabi",
+        name: "20x25 Fotoğraf Kabı",
+        shortName: "20x25 Fotoğraf Kabı",
+        slug: "20x25-fotograf-kabi",
+        priceCheck: "Fiyat Sorunuz",
+        description: "Geniş format stüdyo fotoğrafları ve tablo sunumları için 20x25 fotoğraf kabı.",
+        features: [
+            "20x25 cm geniş format",
+            "Tablo ve poster sunumu",
+            "Maksimum koruma",
+            "Özel tasarım pencereli kesim"
+        ],
+        specs: {
+            material: "Kalın Mukavva / Bristol",
+            dimensions: "20x25 cm",
+            minOrder: 1000,
+            printing: "Büyük Boy Ofset",
+            leadTime: "12-15 İş Günü"
+        },
+        image: "/tekli-vesikalik-kabi-kapak.jpg",
         pirReklamUrl: "https://pirreklam.com.tr"
     }
 ];
