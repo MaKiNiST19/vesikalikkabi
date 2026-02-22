@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import { PRODUCTS } from '@/lib/data'
 import ProductCard from '@/components/features/ProductCard'
-import QuoteForm from '@/components/features/QuoteForm'
+
 
 export const metadata: Metadata = {
     title: 'Vesikalık Kabı Modelleri | Tekli ve Çiftli Seçenekler - Pir Reklam',
@@ -43,20 +43,14 @@ export default function ProductsPage() {
                 {/* Fotoğraf Kabı Bölümü */}
                 <div className="mb-12">
                     <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-700">Fotoğraf Kabı Modelleri (Özel Ebat)</h2>
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 items-start max-w-7xl mx-auto">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-8 items-start w-full mx-auto px-4 max-w-[1920px]">
                         {PRODUCTS.filter(p => p.categoryId === 'fotograf-kabi').map((product) => (
                             <ProductCard key={product.id} product={product} />
                         ))}
                     </div>
                 </div>
 
-                <div className="mt-20 max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-200">
-                    <div className="text-center mb-8">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-2">Özel Sipariş & Fiyat Teklifi</h2>
-                        <p className="text-gray-600">Toplu alımlar ve özel baskı talepleriniz için hemen teklif isteyin.</p>
-                    </div>
-                    <QuoteForm />
-                </div>
+
             </div>
         </div>
     )

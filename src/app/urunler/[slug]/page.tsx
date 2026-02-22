@@ -77,23 +77,20 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                             <ul className="space-y-4 text-gray-700 leading-relaxed">
                                 <li className="flex gap-3">
                                     <span className="text-blue-600 font-bold">–</span>
-                                    <span>Sepet dışındaki sipariş aşamasında; grafik çalışmasından önce, minimum <strong>%20 ön ödeme</strong> alınır.</span>
+                                    <span>Sepet dışındaki sipariş aşamasında; grafik çalışmasından önce, minimum <strong>%30 ön ödeme</strong> alınır.</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <span className="text-blue-600 font-bold">–</span>
                                     <span>Siparişinizin hazır olduğunu belgeleyen <strong>video gönderilir</strong>, kalan bakiye tahsil sonrası sevk edilir.</span>
                                 </li>
-                                <li className="flex gap-3">
-                                    <span className="text-blue-600 font-bold">–</span>
-                                    <span>Web sitesi üzerinden sepete ekle aşamasını kullanarak <strong>kredi kartınızla taksitlendirme</strong> yapabilirsiniz.</span>
-                                </li>
+
                                 <li className="flex gap-3">
                                     <span className="text-blue-600 font-bold">–</span>
                                     <span>Siparişin hazırlanması süreci; grafik onayından sonra, <strong>serigrafi boya baskılı</strong> ürünlerde 7 gün, <strong>gofre kabartmalı</strong> ürünlerde 15 gündür.</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <span className="text-blue-600 font-bold">–</span>
-                                    <span>Ürün, desen ve renk tonlarında <strong>– + %10 farklılıklar</strong> olabilir.</span>
+                                    <span>Ürün, desen ve renk tonlarında <strong>+- %10 farklılıklar</strong> olabilir.</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <span className="text-blue-600 font-bold">–</span>
