@@ -108,7 +108,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                     </div>
 
                     {/* RIGHT: DETAILS & BUTTONS */}
-                    <div className="space-y-8 lg:sticky lg:top-24">
+                    <div className="space-y-8 lg:sticky lg:top-[150px]">
                         <div>
                             <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
                                 {product.name}
@@ -160,12 +160,18 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                                     rel="noopener noreferrer"
                                     className="flex-1 relative group block z-10"
                                 >
-                                    {/* Swatches sliding up from behind */}
-                                    <div className="absolute left-0 right-0 top-0 flex items-center justify-center gap-1.5 opacity-0 -z-10 transition-all duration-300 ease-out group-hover:-translate-y-10 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
+                                    <Button size="lg" className="w-full h-16 text-lg gap-3 btn-animated shadow-lg font-bold transition-all text-white border-none relative z-20 hover:scale-[1.02]">
+                                        Ürün Renklerini İncele
+                                    </Button>
+
+                                    {/* Swatches - Sliding up on desktop, always visible below on mobile */}
+                                    <div className="absolute md:absolute left-0 right-0 top-0 md:top-0 flex items-center justify-center gap-1.5 transition-all duration-300 ease-out 
+                                        md:opacity-0 md:-z-10 md:group-hover:-translate-y-10 md:group-hover:opacity-100 md:pointer-events-none md:group-hover:pointer-events-auto
+                                        max-md:relative max-md:opacity-100 max-md:z-10 max-md:mt-4 max-md:translate-y-0 max-md:pointer-events-auto">
                                         {PRODUCT_COLORS.map((color, i) => (
                                             <div
                                                 key={i}
-                                                className={`w-8 h-8 rounded-md shadow-md border-2 transition-transform duration-300 transform translate-y-4 group-hover:translate-y-0 group-hover:hover:scale-110 cursor-pointer ${color === '#FFFFFF' ? 'border-gray-200' : 'border-white/20'}`}
+                                                className={`w-8 h-8 rounded-md shadow-md border-2 transition-transform duration-300 transform md:translate-y-4 md:group-hover:translate-y-0 group-hover:hover:scale-110 cursor-pointer ${color === '#FFFFFF' ? 'border-gray-200' : 'border-white/20'}`}
                                                 style={{
                                                     backgroundColor: color,
                                                     transitionDelay: `${i * 40}ms`
@@ -173,9 +179,6 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                                             />
                                         ))}
                                     </div>
-                                    <Button size="lg" className="w-full h-16 text-lg gap-3 btn-animated shadow-lg font-bold transition-all text-white border-none relative z-20 hover:scale-[1.02]">
-                                        Ürün Renklerini İncele
-                                    </Button>
                                 </a>
                             </div>
                         </div>
@@ -231,7 +234,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center border-b pb-6">Sıkça Sorulan Sorular</h2>
                             <div className="space-y-6">
                                 {content.faq.map((fq, idx) => (
-                                    <div key={idx} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                                    <div key={fq.question} id={`faq-${idx}`} className="scroll-mt-[150px] bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                                         <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-start gap-4">
                                             <span className="text-blue-600 bg-blue-50 p-1 rounded-md shrink-0">S.</span>
                                             {fq.question}

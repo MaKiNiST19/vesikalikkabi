@@ -8,6 +8,8 @@ import JsonLd from '@/components/seo/JsonLd';
 import { COMPANY_INFO, SOCIAL_MEDIA } from '@/lib/data';
 import FloatingWhatsApp from '@/components/ui/FloatingWhatsApp';
 import ScrollToTopButton from '@/components/ui/ScrollToTopButton';
+import ScrollToTop from '@/components/utils/ScrollToTop';
+
 
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' })
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -46,12 +48,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="tr" className="scroll-smooth">
+    <html lang="tr" className="scroll-smooth scroll-pt-[110px] md:scroll-pt-[150px]">
       <body className={cn(
         "bg-gray-50 text-gray-900 antialiased min-h-screen flex flex-col font-sans",
         outfit.variable,
         inter.variable
       )}>
+        <ScrollToTop />
         <JsonLd data={organizationSchema} />
         <Header />
         <main className="flex-grow">

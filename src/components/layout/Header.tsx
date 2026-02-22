@@ -9,7 +9,7 @@ export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
     return (
-        <header className="sticky top-0 z-50 w-full shadow-sm bg-white border-b border-gray-100">
+        <header className="sticky top-0 z-50 w-full shadow-lg">
             <div className="relative w-full">
                 {/* ABSOLUTE LOGO POSITIONED INSIDE CONTAINER SPAN */}
                 <div className="container mx-auto px-4 sm:px-8 absolute inset-0 pointer-events-none z-50 flex justify-start">

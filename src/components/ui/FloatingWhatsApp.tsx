@@ -1,14 +1,22 @@
 "use client";
 
 import React from 'react';
+import { usePathname } from 'next/navigation';
+import { cn } from '@/lib/utils';
 
 const FloatingWhatsApp = () => {
+    const pathname = usePathname();
+    const isProductDetail = pathname?.startsWith('/urunler/');
+
     return (
         <a
             href="https://wa.me/905442338003"
             target="_blank"
             rel="noopener noreferrer"
-            className="fixed bottom-6 right-6 z-[9999] group"
+            className={cn(
+                "fixed bottom-6 right-6 z-[9999] group",
+                isProductDetail && "max-md:hidden"
+            )}
         >
             <button className="relative bg-green-500 text-white w-14 h-14 rounded-full flex justify-center items-center shadow-lg hover:bg-green-600 transition-all duration-300 ease-out z-50 hover:scale-105 active:scale-95 cursor-pointer" aria-label="WhatsApp Hattı">
                 <div className="absolute -right-1 -top-1 z-10">

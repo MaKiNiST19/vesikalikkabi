@@ -26,13 +26,6 @@ export default function Home() {
       {/* HERO SECTION */}
       <Hero />
 
-      {/* MOBILE QUOTE FORM SECTION (Visible only on mobile/tablet) */}
-      <section className="lg:hidden py-12 bg-gray-50 px-4" id="quote-form-mobile">
-        <div className="container mx-auto max-w-lg">
-          <QuoteForm />
-        </div>
-      </section>
-
       {/* Manufacturer Authority Section - Moved from old features/trust section */}
       <section className="py-16 bg-white border-b border-gray-100">
         <div className="container mx-auto px-4 sm:px-8">
@@ -111,7 +104,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-8">
           <div className="space-y-16">
             {seoAuthorityBlock.sections.map((section) => (
-              <div key={section.id} id={section.id} className="scroll-mt-24">
+              <div key={section.id} id={section.id} className="scroll-mt-[150px]">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">{section.heading}</h2>
                 {section.subheading && <h3 className="text-xl font-semibold text-gray-700 mb-4">{section.subheading}</h3>}
                 <SeoTextRenderer content={section.content} className="prose prose-blue max-w-none text-gray-600 leading-relaxed text-left" />
