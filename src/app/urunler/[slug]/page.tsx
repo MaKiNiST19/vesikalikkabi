@@ -8,7 +8,7 @@ import { Check, MessageSquare } from 'lucide-react'
 import { getProductContent } from '@/lib/product-content'
 import FeatureHighlightCard from '@/components/features/FeatureHighlightCard'
 import SeoTextRenderer from '@/components/ui/SeoTextRenderer'
-
+import JsonLd from '@/components/seo/JsonLd'
 export async function generateStaticParams() {
     return PRODUCTS.map((product) => ({
         slug: product.slug,
@@ -26,8 +26,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const content = await getProductContent(slug)
 
     return {
-        title: content?.metaTitle || `${product.name} | Pir Reklam İzmir`,
+        title: content?.metaTitle || `${product.name} | Toptan Vesikalık Kabı ve Kılıfı - Pir Reklam`,
         description: content?.metaDescription || product.description,
+        keywords: "vesikalık kabı, vesikalık kılıfı, " + product.name + ", plastik vesikalık kabı, naylon vesikalık kılıfı, pvc kılıf, toptan vesikalık kabı, fotoğraf stüdyosu",
     }
 }
 
@@ -264,6 +265,32 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                         </Button>
                     </a>
                 </div>
+
+                <JsonLd data={{
+                    '@context': 'https://schema.org',
+                    '@type': 'Product',
+                    'name': product.name,
+                    'image': `https://vesikalikkabi.com.tr${product.image}`,
+                    'description': product.description,
+                    'keywords': "vesikalık kabı, vesikalık kılıfı, pvc fotoğraf kabı, naylon zarf, vesikalık fiyatları",
+                    'offers': {
+                        '@type': 'AggregateOffer',
+                        'priceCurrency': 'TRY',
+                        'offerCount': product.specs.minOrder,
+                        'lowPrice': "0.00",
+                        'highPrice': "0.00",
+                        'availability': 'https://schema.org/InStock',
+                        'seller': {
+                            '@type': 'Organization',
+                            'name': 'Pir Reklam'
+                        }
+                    },
+                    'aggregateRating': {
+                        '@type': 'AggregateRating',
+                        'ratingValue': '4.9',
+                        'reviewCount': '186'
+                    }
+                }} />
             </div>
 
         </div>

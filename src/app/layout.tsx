@@ -19,7 +19,8 @@ const organizationSchema = {
   '@type': 'Organization',
   name: COMPANY_INFO.name,
   url: 'https://vesikalikkabi.com.tr',
-  logo: 'https://vesikalikkabi.com.tr/logo.png', // Placeholder
+  logo: 'https://vesikalikkabi.com.tr/logo.png',
+  description: "Türkiye'nin lider vesikalık kabı ve vesikalık kılıfı üreticisi. Toptan pvc, naylon, plastik vesikalık zarfı; tekli vesikalık kabı, çiftli vesikalık fotoğraf kabı imalatı, şeffaf ve biala kılıflar.",
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: COMPANY_INFO.phone,
@@ -38,8 +39,9 @@ const organizationSchema = {
 
 
 export const metadata: Metadata = {
-  title: 'Pir Reklam | Kurumsal Vesikalık Kabı Üretimi',
-  description: '1961\'den beri İzmir\'de en kaliteli Vesikalık Fotoğraf Kabı üreticisi. Tekli ve çiftli seçenekler, logo baskılı kurumsal çözümler.',
+  title: 'Pir Reklam | Kurumsal Vesikalık Kabı & Vesikalık Kılıfı Üreticisi',
+  description: "1961'den beri toptan vesikalık kabı, vesikalık kılıfı, pvc, plastik folyo, biala kılıflar, tekli ve çiftli karton vesikalık fotoğraf kabı imalatı. Toptan vesikalık poşeti ve naylon kılıflar.",
+  keywords: "vesikalık kabı, vesikalık kılıfı, Vesikalık fotoğraf kabı, Tekli vesikalık kabı, Tekli vesikalık kılıfı, Tek cepli vesikalık kabı, Çiftli vesikalık fotoğraf kabı, Çiftli vesikalık kabı, Çiftli vesikalık kılıfı, Çiftli karton vesikalık kabı, Çiftli karton vesikalık kılıfı, Fantezi kağıt vesikalık kabı, Fantezi kağıt vesikalık kılıfı, Varak yaldız baskılı vesikalık kabı, Varak yaldız baskılı vesikalık kılıfı, Karton çiftli vesikalık kabı, Karton vesikalık kabı, Karton vesikalık kılıfı, vesikalık zarfı, vesikalık biala, vesikalık pvc, vesikalık plastik, vesikalık naylon, pvc vesikalık kabı, pvc vesikalık kılıfı, naylon vesikalık kabı, naylon vesikalık kılıfı, vesikalık fotoğraf kabı kılıfı, vesikalık fotoğraf fiyatları, vesikalık kabı fiyatları, vesikalık kılıfı fiyatları, plastik vesikalık kabı, plastik vesikalık kılıfı, plastik folyo vesikalık kabı, plastik folyo vesikalık kılıfı, vesikalık fotoğraf koyma kabı, vesikalık poşeti, vesikalık fotoğraf kılıfı, vesikalık fotoğraf poşeti, plastik vesikalık zarfı fiyatları, biala vesikalık kabı, biala vesikalık kılıfı, şeffaf vesikalık kabı, şeffaf vesikalık kılıfı"
 }
 
 export default function RootLayout({
