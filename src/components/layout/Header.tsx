@@ -13,7 +13,7 @@ export default function Header() {
             <div className="relative w-full">
                 {/* ABSOLUTE LOGO POSITIONED INSIDE CONTAINER SPAN */}
                 <div className="container mx-auto px-4 sm:px-8 absolute inset-0 pointer-events-none z-50 flex justify-start">
-                    <Link href="/" className="pointer-events-auto absolute top-[10px] md:top-[13px] flex items-center bg-white px-3 py-1 md:px-4 md:py-1.5 rounded-xl shadow-xl border border-gray-100 transition-transform hover:scale-105 h-[80px] md:h-[106px] min-w-[100px] md:min-w-[140px] justify-center">
+                    <Link href="/" className="pointer-events-auto absolute top-[10px] md:top-[13px] flex items-center bg-white px-3 py-1 md:px-4 md:py-1.5 shadow-xl border border-gray-100 transition-transform hover:scale-105 h-[80px] md:h-[106px] min-w-[100px] md:min-w-[140px] justify-center">
                         <img
                             src="/logo.webp"
                             alt="Pir Reklam Logo"
@@ -36,25 +36,20 @@ export default function Header() {
                         </div>
                         <div className="hidden sm:flex items-center gap-4 shrink-0">
                             {/* Social Media Icons */}
-                            <div className="flex items-center gap-3 border-r border-white/20 pr-4">
-                                <a href={SOCIAL_MEDIA.facebook} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="Facebook">
-                                    <Facebook className="w-3.5 h-3.5" />
+                            <div className="flex items-center gap-4">
+                                <a href={SOCIAL_MEDIA.facebook} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-all hover:scale-110" aria-label="Facebook">
+                                    <Facebook className="w-[18px] h-[18px]" />
                                 </a>
-                                <a href={SOCIAL_MEDIA.instagram} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="Instagram">
-                                    <Instagram className="w-3.5 h-3.5" />
+                                <a href={SOCIAL_MEDIA.instagram} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-all hover:scale-110" aria-label="Instagram">
+                                    <Instagram className="w-[18px] h-[18px]" />
                                 </a>
-                                <a href={SOCIAL_MEDIA.youtube} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="YouTube">
-                                    <Youtube className="w-3.5 h-3.5" />
+                                <a href={SOCIAL_MEDIA.youtube} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-all hover:scale-110" aria-label="YouTube">
+                                    <Youtube className="w-[18px] h-[18px]" />
                                 </a>
-                                <a href={SOCIAL_MEDIA.linkedin} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity" aria-label="LinkedIn">
-                                    <Linkedin className="w-3.5 h-3.5" />
+                                <a href={SOCIAL_MEDIA.linkedin} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-all hover:scale-110" aria-label="LinkedIn">
+                                    <Linkedin className="w-[18px] h-[18px]" />
                                 </a>
                             </div>
-
-                            <a href={`tel:${COMPANY_INFO.phone.replace(/\s/g, '')}`} className="hover:underline flex items-center gap-1.5">
-                                <Phone className="w-3.5 h-3.5" />
-                                {COMPANY_INFO.phone}
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -64,6 +59,15 @@ export default function Header() {
                     <div className="container mx-auto px-4 sm:px-8 flex items-center justify-between w-full h-full">
                         {/* Space for absolute logo */}
                         <div className="w-[110px] md:w-[150px] shrink-0 hidden md:block"></div>
+
+                        {/* Phone info - between red and blue bars, no background */}
+                        <a href={`tel:${COMPANY_INFO.phone.replace(/\s/g, '')}`} className="hidden md:flex items-center gap-2.5 shrink-0 ml-2">
+                            <Phone className="w-5 h-5 text-[#cc0735] shrink-0" />
+                            <div className="flex flex-col leading-tight">
+                                <span className="text-[10px] text-gray-400 font-medium">Türkiye&apos;nin her yerinden</span>
+                                <span className="text-base font-extrabold text-[#26497f] tracking-tight">{COMPANY_INFO.phone}</span>
+                            </div>
+                        </a>
 
                         <div className="flex-1 flex justify-end md:justify-between items-center h-full">
                             {/* DESKTOP NAV */}
