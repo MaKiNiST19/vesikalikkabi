@@ -13,7 +13,7 @@ export default function Header() {
             <div className="relative w-full">
                 {/* ABSOLUTE LOGO POSITIONED INSIDE CONTAINER SPAN */}
                 <div className="container mx-auto px-4 sm:px-8 absolute inset-0 pointer-events-none z-50 flex justify-start">
-                    <Link href="/" className="pointer-events-auto absolute top-[10px] md:top-[13px] flex items-center bg-white px-3 py-1 md:px-4 md:py-1.5 shadow-xl border border-gray-100 transition-transform hover:scale-105 h-[80px] md:h-[106px] min-w-[100px] md:min-w-[140px] justify-center">
+                    <Link href="/" className="pointer-events-auto absolute top-[10px] md:top-[13px] flex items-center bg-white p-2 md:p-3 shadow-xl border border-gray-100 transition-transform hover:scale-105 h-[80px] md:h-[106px] aspect-square justify-center">
                         <img
                             src="/logo.webp"
                             alt="Pir Reklam Logo"
