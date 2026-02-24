@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Inter, Outfit } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
@@ -60,6 +61,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr" className="scroll-smooth scroll-pt-[110px] md:scroll-pt-[150px]">
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-VLX6S47KHM"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-VLX6S47KHM');
+        `}
+      </Script>
       <body className={cn(
         "bg-gray-50 text-gray-900 antialiased min-h-screen flex flex-col font-sans",
         outfit.variable,
