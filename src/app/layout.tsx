@@ -61,6 +61,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr" className="scroll-smooth scroll-pt-[110px] md:scroll-pt-[150px]">
+      {/* Google Tag Manager - Head */}
+      <Script id="gtm-head" strategy="beforeInteractive">
+        {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WQSXM8MR');`}
+      </Script>
       {/* Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-VLX6S47KHM"
@@ -79,6 +87,15 @@ export default function RootLayout({
         outfit.variable,
         inter.variable
       )}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WQSXM8MR"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <ScrollToTop />
         <JsonLd data={organizationSchema} />
         <Header />
