@@ -9,6 +9,7 @@ import { getProductContent } from '@/lib/product-content'
 import FeatureHighlightCard from '@/components/features/FeatureHighlightCard'
 import SeoTextRenderer from '@/components/ui/SeoTextRenderer'
 import JsonLd from '@/components/seo/JsonLd'
+import ProductVariationSelector from '@/components/products/ProductVariationSelector'
 export async function generateStaticParams() {
     return PRODUCTS.map((product) => ({
         slug: product.slug,
@@ -138,6 +139,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                                     </div>
                                 ))}
                             </div>
+
+                            <ProductVariationSelector slug={product.slug} />
 
                             {/* CTAs */}
                             <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100">
