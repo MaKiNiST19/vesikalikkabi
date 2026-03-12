@@ -43,8 +43,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
     const content = await getProductContent(slug)
 
-    const isTekli = product.categoryId === 'tekli-vesikalik-kabi'
-    const targetUrl = isTekli ? 'https://ruhsatkabi.tr/plastik-urunler/vesikalik-kabi/tekli-vesikalik-kabi/' : 'https://ruhsatkabi.tr/plastik-urunler/vesikalik-kabi/ciftli-vesikalik-kabi/'
+    const targetUrl = product.pirReklamUrl || 'https://pirreklam.com.tr';
     const PRODUCT_COLORS = ['#0047AB', '#E02020', '#800000', '#252525', '#FFFFFF', '#808080', '#2E8B57']
 
     return (

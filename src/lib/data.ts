@@ -74,7 +74,7 @@ export const PRODUCTS: Product[] = [
             leadTime: "7 İş Günü"
         },
         image: "/tekli-vesikalik-kabi-kapak.jpg",
-        pirReklamUrl: "https://pirreklam.com.tr"
+        pirReklamUrl: "https://pirreklam.com.tr/urun/folyo-ince-pvc-tekli-vesikalik-kabi/"
     },
     {
         id: "buzlu-seffaf-pvc-tekli-vesikalik-kabi",
@@ -98,7 +98,7 @@ export const PRODUCTS: Product[] = [
             leadTime: "7 İş Günü"
         },
         image: "/tekli-vesikalik-kabi-kapak.jpg",
-        pirReklamUrl: "https://pirreklam.com.tr"
+        pirReklamUrl: "https://pirreklam.com.tr/urun/buzlu-seffaf-pvc-tekli-vesikalik-kabi/"
     },
     {
         id: "mat-biala-tekli-vesikalik-kabi",
@@ -122,7 +122,7 @@ export const PRODUCTS: Product[] = [
             leadTime: "7-15 İş Günü"
         },
         image: "/tekli-vesikalik-kabi-kapak.jpg",
-        pirReklamUrl: "https://pirreklam.com.tr"
+        pirReklamUrl: "https://pirreklam.com.tr/urun/mat-biala-tekli-vesikalik-kabi/"
     },
     {
         id: "deri-desen-kalin-biala-tekli-vesikalik-kabi",
@@ -146,7 +146,7 @@ export const PRODUCTS: Product[] = [
             leadTime: "15 İş Günü"
         },
         image: "/tekli-vesikalik-kabi-kapak.jpg",
-        pirReklamUrl: "https://pirreklam.com.tr"
+        pirReklamUrl: "https://pirreklam.com.tr/urun/deri-desen-kalin-biala-tekli-vesikalik-kabi/"
     },
     {
         id: "biala-ciftli-vesikalik-kabi",
@@ -170,7 +170,7 @@ export const PRODUCTS: Product[] = [
             leadTime: "7 İş Günü"
         },
         image: "/ciftli-vesikalik-kabi-kapak.jpg",
-        pirReklamUrl: "https://pirreklam.com.tr"
+        pirReklamUrl: "https://pirreklam.com.tr/urun/mat-biala-ciftli-vesikalik-kabi/"
     },
     {
         id: "ofset-baskili-seffaf-pvc-ciftli-vesikalik-kabi",
@@ -194,7 +194,7 @@ export const PRODUCTS: Product[] = [
             leadTime: "10-12 İş Günü"
         },
         image: "/ciftli-vesikalik-kabi-kapak.jpg",
-        pirReklamUrl: "https://pirreklam.com.tr"
+        pirReklamUrl: "https://pirreklam.com.tr/urun/ofset-baskili-seffaf-pvc-ciftli-vesikalik-kabi/"
     },
     {
         id: "dikisli-lux-fantezi-kagit-ciftli-vesikalik-kabi",
@@ -218,7 +218,7 @@ export const PRODUCTS: Product[] = [
             leadTime: "15 İş Günü"
         },
         image: "/ciftli-vesikalik-kabi-kapak.jpg",
-        pirReklamUrl: "https://pirreklam.com.tr"
+        pirReklamUrl: "https://pirreklam.com.tr/urun/dikisli-lux-fantezi-kagit-ciftli-vesikalik-kabi/"
     },
     {
         id: "ofset-baski-dikisli-kuse-kagit-ciftli-vesikalik-kabi",
@@ -242,7 +242,7 @@ export const PRODUCTS: Product[] = [
             leadTime: "12-14 İş Günü"
         },
         image: "/ciftli-vesikalik-kabi-kapak.jpg",
-        pirReklamUrl: "https://pirreklam.com.tr"
+        pirReklamUrl: "https://pirreklam.com.tr/urun/ofset-baski-dikisli-kuse-kagit-ciftli-vesikalik-kabi/"
     },
     {
         id: "6x9-fotograf-kabi",
