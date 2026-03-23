@@ -11,7 +11,6 @@ import { CATEGORIES, CITIES } from '@/lib/data'
 import { seoAuthorityBlock } from '@/lib/seo-content'
 import { Clock } from 'lucide-react'
 import SeoTextRenderer from '@/components/ui/SeoTextRenderer'
-import AnimatedTextButton from '@/components/ui/AnimatedTextButton'
 
 export default function Home() {
   const faqs = [
@@ -87,9 +86,6 @@ export default function Home() {
                     Üretim Sürecimizi Keşfedin
                   </Button>
                 </Link>
-                <a href="https://pirreklam.com.tr" target="_blank" rel="noopener noreferrer">
-                  <AnimatedTextButton text="Tüm Promosyon Ürünleri İçin Pir Reklam" />
-                </a>
               </div>
             </div>
           </div>
